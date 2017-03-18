@@ -29,10 +29,28 @@ lista lub list / lista || show
 5.
 Aby zakończyć działanie programu należy wpisać w konsole komende:
 koniec lub end / zakończ || end 
+						
+
+
+
+
+Application "Phone book" 
+Instruction:
+1.Adding contact
+2.Removal of contact
+3.Showing contacts
+4.Sort contacts
+5.How to quit?
+
+
+1.
+To add a contact to phone book, enter the command consoles:
+"add" and phone number. 
+
+2.To remove contacts from phone book, enter the command consoles:
+"del" and name contact.
+
+3.To show contacts from phone book, enter the command consoles
 			
-			
-			
-		
-			
-				
-				
+/tomorrow
+				ill end it
