@@ -1,0 +1,11 @@
+package KsiazkaTelefoniczna;
+
+import java.io.Serializable;
+
+public class Kontakt implements Serializable {
+	private static final long serialVersionUID = -113L;
+	
+	public String nazwa;
+	public String telefon;
+	
+}
