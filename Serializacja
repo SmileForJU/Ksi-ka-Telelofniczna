@@ -1,0 +1,42 @@
+package Konsola;
+
+import java.io.File;
+import java.io.IOException;
+import java.io.Serializable;
+import java.util.Date;
+
+import KsiazkaTelefoniczna.Utils;
+
+public class serializacja {
+
+	static public class Dane implements Serializable {
+		private static final long serialVersionUID = 123L;
+		
+		int x;
+		String napis;
+		Date data;
+		
+	}
+	public static void main(String[] args) throws IOException, ClassNotFoundException {
+		System.out.println("Start");
+		File plik = new File("plik.dat");
+		
+		Dane o = new Dane();
+		o.x=12;
+		o.napis ="abc";
+		o.data = new Date();
+		
+		Utils.zapiszObiektDoPliku(plik, o);
+		
+		
+		Dane odczytaneDane = (Dane)Utils.czytajObiektZPliku(plik);
+		
+		System.out.println(odczytaneDane.x);
+		System.out.println(odczytaneDane.napis);
+		System.out.println(odczytaneDane.data);
+	
+		
+		
+		System.out.println("End");
+	}
+	}
