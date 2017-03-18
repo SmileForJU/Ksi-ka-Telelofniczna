@@ -1,0 +1,17 @@
+package Konsola;
+
+import java.io.File;
+import java.io.IOException;
+
+public class KlasaFile {
+
+	public static void main(String[] args) throws IOException {
+		
+		System.out.println("Start");
+	
+		File plik = new File("notatka.txt");
+		plik.createNewFile();
+		
+		System.out.println("End");
+	}
+}
