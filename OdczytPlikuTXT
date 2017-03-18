@@ -1,0 +1,54 @@
+package Konsola;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+
+public class OdczytPlikuTXT {
+	public static void main(String[] args) throws IOException {
+		System.out.println("Start");
+		
+		File plik = new File("kontakty.tel");		
+		if(plik.exists()){
+			
+			String tekst = pobierzTeskt(plik);
+			
+			System.out.println(  tekst  );
+		} else { // nie istnieje
+			System.out.println("Dany plik nie istnieje"+ plik.getAbsolutePath()+plik.getName());
+		}
+		System.out.println("End");
+		
+		
+	}
+
+	public static String pobierzTeskt(File plik) throws  IOException {
+		InputStream in = new FileInputStream(plik);
+		InputStreamReader reader = new InputStreamReader(in);
+		BufferedReader buf = new BufferedReader(reader);
+		StringBuilder tekst = new StringBuilder((int)plik.length());
+		
+		
+		while(buf.ready()){
+			tekst.append(buf.readLine());
+			
+			if(buf.ready()){
+				tekst.append("\n");
+			}
+		}
+		
+		buf.close();
+		reader.close();
+		in.close();
+		
+		
+		return tekst.toString();
+	}
+	
+	
+	
+
+}
