@@ -44,12 +44,12 @@ Instruction:
 
 
 1.
-To add a contact to phone book, enter the command consoles:
+To add a contact to phone book, enter the command console:
 "add" and phone number. 
 
-2.To remove contacts from phone book, enter the command consoles:
+2.To remove contacts from phone book, enter the command console:
 "del" and name contact.
 
-3.To show contacts from phone book, enter the command consoles
+3.To show contacts from phone book, enter the command console:
 			
 MORE TOMMMOOOOOROOOW
