@@ -33,8 +33,6 @@ koniec lub end / zakończ || end
 			
 			
 		
-			if("pokaż".equals(polecenie)|| "show".equals(polecenie)){
 			
 				
 				
-		
