@@ -52,5 +52,4 @@ To add a contact to phone book, enter the command consoles:
 
 3.To show contacts from phone book, enter the command consoles
 			
-/tomorrow
-				ill end it
+MORE TOMMMOOOOOROOOW
