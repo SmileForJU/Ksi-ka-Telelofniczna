@@ -1,0 +1,28 @@
+package Konsola;
+
+import java.io.File;
+import java.io.IOException;
+
+public class ListaPlikowKatalogu {
+	public static void main(String[] args) throws IOException{
+	
+		System.out.println("Start");
+		
+		File katalog = new File("E:/Projekty/EE/Książka telefoniczna/src");
+		String path = katalog.getAbsolutePath();
+		System.out.println(path);
+		
+		File[] lista = katalog.listFiles();
+		for(int i=0; i<lista.length; i++){
+			
+				if(lista[i].isDirectory()){
+					//katalog
+					System.out.print(" K ");
+				} else{ //plik
+					System.out.print(" P ");
+				}
+				System.out.println("   "+lista[i].getName());
+		}
+	System.out.println("End");
+}
+}
